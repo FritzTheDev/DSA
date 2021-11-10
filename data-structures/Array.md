@@ -1,4 +1,4 @@
-# Arrays
+# Array
 
 ## What is an array?
 Arrays are a type of data structure that contains an arbitrary number of elements in a specific order.
