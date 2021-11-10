@@ -1,6 +1,6 @@
 # Arrays
 
-### What is an array?
+## What is an array?
 Arrays are a type of data structure that contains an arbitrary number of elements in a specific order.
 
 Arrays in Javacript & thus Typescript behave a little differently than arrays in many other C-like languages.
@@ -17,7 +17,7 @@ resized and can contain a mix of data types because the array isn't constrained 
 addresses it needs to stay within.
 
 
-### Example Of A Dynamic Array (Typescript)
+## Example Of A Dynamic Array (Typescript)
 ```ts
 // Creating a dynamic array /w an optional TS annotation to designate it as an array of strings.
 const names: string[] = ["Omar", "Joseph", "Emily", "Vidya"];
