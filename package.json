@@ -1,0 +1,12 @@
+{
+  "name": "data-structures-algorithms",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FritzTheDev/DSA",
+  "author": "Frederick Johnson <fritzj96@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ts-node": "^10.7.0"
+  }
+}
