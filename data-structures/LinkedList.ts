@@ -49,10 +49,10 @@ class LinkedList<T> implements ILinkedList<T> {
 
     return node;
   }
-  
+
   public deleteNode(node: ListNode<T>): void {
     if (!node.prev) {
-      this.head = node.next
+      this.head = node.next;
     } else {
       const prevNode = node.prev;
       prevNode.next = node.next;
@@ -68,8 +68,8 @@ class LinkedList<T> implements ILinkedList<T> {
     const addToArray = (node: ListNode<T>): T[] => {
       array.push(node.data);
       return node.next ? addToArray(node.next) : array;
-    }
-    
+    };
+
     return addToArray(this.head);
   }
 
@@ -83,8 +83,7 @@ class LinkedList<T> implements ILinkedList<T> {
         return node;
       }
       return node.next ? checkNext(node.next) : null;
-    }
+    };
     return this.head ? checkNext(this.head) : null;
   }
 }
-
