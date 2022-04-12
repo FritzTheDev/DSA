@@ -6,7 +6,13 @@
   "repository": "https://github.com/FritzTheDev/DSA",
   "author": "Frederick Johnson <fritzj96@gmail.com>",
   "license": "UNLICENSED",
+  "scripts": {
+    "ds": "ts-node ./data-structures/index.ts"
+  },
   "devDependencies": {
     "ts-node": "^10.7.0"
+  },
+  "dependencies": {
+    "typescript": "^4.6.3"
   }
 }

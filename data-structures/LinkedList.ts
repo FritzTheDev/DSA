@@ -1,6 +1,6 @@
 class ListNode<T> {
   public next: ListNode<T> | null = null; // The next "Link" in the Linked List
-  public prev: ListNode<T> | null = null; // The next "Link" in the Linked List
+  public prev: ListNode<T> | null = null; // The previous "Link" in the Linked List
   public data: T;
 
   constructor(data: T) {
@@ -17,7 +17,7 @@ interface ILinkedList<T> {
   search(comparator: (data: T) => boolean): ListNode<T> | null;
 }
 
-class LinkedList<T> implements ILinkedList<T> {
+export class LinkedList<T> implements ILinkedList<T> {
   private head: ListNode<T> | null = null;
 
   public insertAtStart(data: T): ListNode<T> {

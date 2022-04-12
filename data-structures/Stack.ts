@@ -1,3 +1,8 @@
+/**
+ * **Stack interface**
+ *
+ * Outlines the critical features of a stack data structure.
+ */
 interface IStack<T> {
   isEmpty: () => boolean;
   push: (item: T) => void;
@@ -5,7 +10,12 @@ interface IStack<T> {
   peek: () => T | null;
 }
 
-export class ArrayStack<T> implements IStack<T> {
+/**
+ * **Array Based Stack**
+ *
+ * Implemented with an array. No real downsides vs a linked list in Typescript.
+ */
+export class Stack<T> implements IStack<T> {
   private contents: T[] = [];
 
   public isEmpty() {
@@ -27,7 +37,12 @@ export class ArrayStack<T> implements IStack<T> {
   }
 }
 
-// Linked-List Stack
+/**
+ *  **Linked List Stack Node**
+ *
+ * Part of the LinkedList Stack Implementation
+ *
+ */
 class StackNode<T> {
   public data: T;
   public next: StackNode<T>;
@@ -37,7 +52,12 @@ class StackNode<T> {
   }
 }
 
-export class LinkedListStack<T> implements IStack<T> {
+/**
+ * **Linked List Stack**
+ *
+ * Implemented with nodes instead of an array. No real benefit over an array stack unless the array is not resizable.
+ */
+class LinkedListStack<T> implements IStack<T> {
   private root: StackNode<T> | null = null;
 
   public isEmpty() {
